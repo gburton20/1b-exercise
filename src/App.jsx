@@ -1,7 +1,7 @@
-import { Button } from "react-bootstrap"
 import Header from "./components/Header"
 import Sidebar from "./components/Sidebar"
-
+import Main from "./components/Main"
+import "./App.css";
 
 function App() {
 
@@ -12,12 +12,15 @@ function App() {
         <Header />
       </div>
 
-      {/* Sidebar/main */}
+      {/* Sidebar and main content */}
       <div className="row">
-        <Sidebar />
+        {/* Sidebar content: */}
+          <Sidebar/>
+        {/* Main content: */}
+          <Main />
       </div>
     </div>
   )
 }
 
-export default App
+export default App;
